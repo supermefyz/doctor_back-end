@@ -112,7 +112,7 @@ def submit_user_info():
     db.session.commit()
     print(f'id:{new_record.id}')
     session['record_id'] = new_record.id
-    return jsonify({"message": "用户信息已保存"}), 200
+    return jsonify({"message": "用户信息已保存","id":new_record.id}), 200
 
 @app.route('/api/chat', methods=['POST'])
 def chat():
