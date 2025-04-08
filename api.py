@@ -459,6 +459,7 @@ def doctor_login():
                 "message": "登录成功",
                 "data": {
                     "user_id": doctor.id,
+                    "status": doctor.status
                 }
             })
 
