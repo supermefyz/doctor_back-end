@@ -80,9 +80,9 @@ with app.app_context():
     db.create_all()
 
 # API 配置
-KIMI_API_KEY = 'sk-rq2IjpECMygXCXTzrBLz68Y21y42ful6l70QKobifqi1hfWy'
+KIMI_API_KEY = ''
 KIMI_API_URL = 'https://api.moonshot.cn/v1/chat/completions'
-OPENAI_API_KEY = "sk-b5878471f7ff4f43b2bde9cbe3e12994"
+OPENAI_API_KEY = ""
 openai_client = OpenAI(api_key=OPENAI_API_KEY, base_url="https://api.deepseek.com")
 
 BLOCKED_WORDS = ['#', '-', '*']
